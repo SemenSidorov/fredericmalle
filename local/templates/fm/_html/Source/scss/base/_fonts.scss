@@ -1,0 +1,68 @@
+﻿// HELVETICA
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('../fonts/Helvetica\ Neue\ Roman.eot');
+    src: url('../fonts/Helvetica\ Neue\ Roman.woff') format('woff'), 
+    url('../fonts/Helvetica\ Neue\ Roman.ttf') format('truetype'), 
+    url('../fonts/Helvetica\ Neue\ Roman.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('../fonts/Helvetica\ Neue\ Light.eot');
+    src: url('../fonts/Helvetica\ Neue\ Light.woff') format('woff'), 
+    url('../fonts/Helvetica\ Neue\ Light.ttf') format('truetype'), 
+    url('../fonts/Helvetica\ Neue\ Light.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('../fonts/Helvetica\ NeueMedium.eot');
+    src: url('../fonts/Helvetica\ NeueMedium.woff') format('woff'),
+     url('../fonts/Helvetica\ NeueMedium.ttf') format('truetype'),
+      url('../fonts/Helvetica\ NeueMedium.svg') format('svg'),
+	url('../fonts/Helvetica\ NeueMedium.otf') format('otf');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Bodoni';
+	src: url('../fonts/Bodoni\ Cyrillic\ Bold.eot');
+    src: url('../fonts/Bodoni\ Cyrillic\ Bold.woff') format('woff'),
+     url('../fonts/Bodoni\ Cyrillic\ Bold.ttf') format('truetype'),
+      url('../fonts/Bodoni\ Cyrillic\ Bold.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Bodoni';
+	src: url('../fonts/Bodoni\ Cyrillic.eot');
+    src: url('../fonts/Bodoni\ Cyrillic.woff') format('woff'),
+     url('../fonts/Bodoni\ Cyrillic.ttf') format('truetype'),
+      url('../fonts/Bodoni\ Cyrillic.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Bodoni';
+	src: url('../fonts/BodoniItalic.eot');
+    src: url('../fonts/BodoniItalic.woff') format('woff'),
+     url('../fonts/BodoniItalic.ttf') format('truetype'),
+      url('../fonts/BodoniItalic.svg') format('svg');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}

@@ -1,0 +1,286 @@
+/*PROMO*/
+
+.preview {
+  position: relative;
+  text-align: center;
+  margin-top: -135px;
+  margin-bottom: 70px;
+}
+
+.preview__img {
+  width: 100%;
+}
+
+.preview__text {
+  @extend %L1;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+
+/*DISCOVER*/
+
+.discovers {
+  margin-bottom: 120px;
+  padding-left: 20px;
+}
+
+.discovers--padding {
+  padding-bottom: 40px;
+  margin-bottom: 53px;
+}
+
+.discovers__title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.discovers-content {
+  display: flex;
+  justify-content: center;
+
+  a {
+    margin-right: 40px;
+    width: 33.3%;
+    flex-grow: 1;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+
+    &:nth-last-of-type(1) {
+      margin-right: 20px;
+
+    }
+  }
+
+  .slick-list {
+    padding-right: 16%;
+  }
+}
+
+.discovers-content--slider {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    margin-right: 40px;
+    width: auto;
+
+    &:nth-last-of-type(1) {
+      margin-right: 0px;
+
+    }
+  }
+}
+
+/*STORES*/
+.stores {
+  margin-bottom: 100px;
+}
+
+.stores__title {
+  text-align: center;
+  margin-bottom: 70px;
+
+}
+
+/* SLIDER */
+.slider-three .slick-list {
+  padding-right: 16%;
+}
+
+/*------*/
+
+/* Баннер на главной */
+
+.banner {
+  margin-bottom: 100px;
+  text-align: center;
+
+  &--img {
+    padding-bottom: 53px;
+
+    .banner__link {
+      &:first-child {
+        margin-bottom: 0;
+        padding: 0!important;
+      }
+    }
+  }
+}
+
+.banner__link {
+  display: block;
+  text-decoration: none;
+  font-size: 32px;
+  line-height: 1;
+  text-transform: uppercase;
+
+  &:first-child {
+    margin-bottom: 70px;
+  }
+}
+
+.banner__img {
+  width: 100%;
+}
+
+/*--------*/
+
+@media all and (max-width: 1340px) {
+  .preview__text {
+    font-size: 30px;
+    bottom: 5%;
+  }
+  .collaboration-item__title {
+    font-size: 40px;
+    color: #eb3300;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .discovers {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .discovers-content .slick-list {
+    padding-right: 0 !important;
+  }
+  .banner {
+    margin-bottom: 70px;
+  }
+  .banner__link {
+    font-size: 22px;
+
+    &:first-child {
+      margin-bottom: 30px;
+      padding: 0 10px;
+    }
+
+  }
+  .collaboration {
+    padding: 0;
+  }
+  .collaboration-block,
+  .collaboration-main,
+  .collaboration-frederic {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .collaboration-item {
+      width: auto;
+    }
+  }
+
+  .collaboration-item_order {
+    order: 1;
+  }
+  .collaboration-item:nth-child(1) {
+    margin-right: 1px;
+  }
+  .preview__text {
+    font-size: 18px;
+    bottom: 5%;
+  }
+  .discovers {
+    margin-bottom: 12%;
+  }
+  .discovers__title {
+    font-size: 22px;
+    margin-bottom: 7%;
+  }
+  .quote {
+    margin-bottom: 6%;
+  }
+  q,
+  .quote__text {
+    font-size: 30px !important;
+    padding: 0 20px;
+  }
+  .collaboration {
+    margin-bottom: 3%;
+  }
+  .collaboration-item {
+    width: auto;
+
+  }
+  .collaboration__title {
+    font-size: 22px;
+    margin-bottom: 7%;
+    padding: 0 20px;
+  }
+
+  .collaboration-item__title {
+    font-size: 5vw;
+    margin: 5% 0;
+  }
+  .quote__author {
+    font-size: 12px;
+  }
+  .stores {
+    margin-bottom: 10%;
+  }
+  .stores__title {
+    font-size: 22px;
+    margin-bottom: 7%;
+    padding: 0 10px;
+  }
+  .collaboration__more {
+    font-size: 12px;
+  }
+  .preview {
+    margin-top: -25px;
+  }
+}
+
+@media all and (max-width: 767px) {
+    .discovers--padding {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .banner.border-bottom {
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 750px) {
+  .preview__text {
+    font-size: 16px;
+    bottom: 3%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .discovers {
+    padding: 0 20px;
+  }
+  .collaboration__text {
+    font-size: 14px;
+    text-indent: 0;
+  }
+  .discovers-content--slider a {
+    margin-right: 0 !important;
+  }
+  q {
+    font-size: 18px !important;
+    padding: 0 20px;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .perfumes-main__text {
+    max-width: 100px;
+  }
+  .preview__text {
+    font-size: 14px;
+    bottom: 1%;
+  }
+
+}

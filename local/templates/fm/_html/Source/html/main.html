@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<link sizes="16x16" href="Content/images/favicon-16x16.png" rel="icon" />
+    <link sizes="32x32" href="Content/images/favicon-32x32.png" rel="icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta property="og:url" content="https://ru.fredericmalle.com/" />
+	<meta property="og:type" content="fredericmalle" />
+	<meta property="og:title" content="Главная" />
+	<meta property="og:description" content="Главная" />
+	<meta property="og:image" content="<!--адрес картинки на странице-->" />
+
+	<title></title>
+
+	<link rel="stylesheet" href="Content/css/main.css">
+
+</head>
+
+<body>
+
+
+	<div class="layout">
+		//= include/_subscribe.html
+		//= include/_header.html
+		//= include/_location-popup.html
+
+		<div class="main">
+
+
+
+			<section class="content">
+
+
+
+				<section class="preview transparency">
+					<a href="#">
+						<picture>
+							<source class="preview__img" srcset="Content/images/main/mainmin.jpg" media="(max-width: 768px)">
+							<source class="preview__img" srcset="Content/images/main/mainmax.png">
+							<img class="preview__img" src="Content/images/main/mainmax.png" alt="">
+						</picture>
+					</a>
+					<p class="preview__text">Explore this perfume composed by dominique Ropion</p>
+				</section>
+				//= include/_collection.html
+				//= include/_collection-slider_main.html
+				
+
+
+				//= include/_explore-slider.html
+
+				//= include/_quote.html
+				
+				<section class="banner">
+					<h2><a class="banner__link" href="#">Открой для себя коллекцию Portrait of a Lady</a></h2>
+					<a class="banner__link" href="#">
+						<picture>
+							<source class="banner__img" srcset="Content/images/main/bannermin.jpg" media="(max-width: 768px)">
+							<source class="banner__img" srcset="Content/images/main/banner.jpg">
+							<img class="banner__img" src="Content/images/main/banner.jpg" alt="">
+						</picture>
+					</a>
+
+				</section>
+
+				<section class="collaboration">
+					<h2 class="collaboration__title">ELEVATING PERFUMERY TO A NEW ARTISTIC LEVEL</h2>
+					<div class="collaboration-frederic">
+						<div class="collaboration-item collaboration-item--width">
+							<img class="collaboration__img" src="Content/images/main/fm.jpg" alt="#">
+						</div>
+						<div class="collaboration-item">
+							<p class="collaboration__text">As a perfume expert, Mr. Malle handpicks perfumers whose work 
+								is changing the face of the industry. As their editor, he guides them individually 
+								through their creative process to ensure that they are always transcending their limits.</p>
+							<p class="collaboration-item__title">The Publisher</p>
+							<p class="collaboration__text">		Together, they create works of art that represent the best of each 
+								olfactive category: the great classics of tomorrow. Mr. Malle acquired an extensive knowledge of 
+								raw materials and olfactory balance at the prestigious perfume laboratory Roure Bertrand Dupont, 
+								where he also befriended the leading perfumers of the industry.</p>
+								<a href="#" class="collaboration__more">Discover more</a>
+						</div>
+					</div>
+					//= include/_collaboration_dr.html
+					//= include/_collaboration_je.html
+					//= include/_collaboration_pb.html
+					//= include/_collaboration_og.html
+					//= include/_collaboration_mro.html
+					//= include/_collaboration_bj.html
+					//= include/_collaboration_cb.html
+					//= include/_collaboration_ef.html
+					//= include/_collaboration_er.html
+					//= include/_collaboration_fb.html
+					//= include/_collaboration_mr.html
+					//= include/_collaboration_rs.html
+					//= include/_collaboration_sg.html
+				</section>
+
+				<section class="stores">
+
+					<h2 class="stores__title">VISIT THE STORES FROM AROUND THE WORLD</h2>
+
+					//= include/_stores-slider.html
+					
+				</section>
+
+
+				
+
+
+
+			</section><!-- content -->
+
+		</div><!-- main -->
+
+
+
+
+		//= include/_cookie.html
+		//= include/_footer.html
+	</div>
+
+	//= include/_scripts.html
+
+	<div id="toTop" class="btn-toTop">Вверх</div>
+
+</body>
+
+</html>

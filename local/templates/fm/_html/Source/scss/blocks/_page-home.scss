@@ -1,0 +1,139 @@
+.promo-product {
+    margin-bottom: 2%;
+    margin-top: -28px;
+}
+.promo-product__img {
+    width: 100%;
+}
+.listing-product {
+    border-bottom: 1px solid $color-gray;
+    margin: 5% 40px;
+}
+.listing-product__title {
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+.listing-product-block {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    
+}
+.listing-product-item {
+    text-align: center;
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.listing-product__img {
+   max-width: 100%;
+   max-height: 100%;
+
+}
+.listing-product-item__link {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 10px;
+    &:nth-last-of-type(1){
+        flex-grow: 1;
+    }
+}
+.listing-product-item__link--height {
+    height: auto;
+}
+.listing-product__text {
+    font-style: normal;
+}
+
+
+
+/*DISCOVER*/
+.discover {
+    padding: 0 20px;
+}
+.discover__title {
+    text-align: center;
+   text-transform: uppercase;
+    font-size: 22px;
+}
+
+ 
+.discover-item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.discover__link {
+    margin-right: 20px;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #000;
+}
+
+.discover__cell { 
+    text-align: center;
+    max-width: 210px;
+}
+
+.discover__text {
+    color: #fff;
+    transition: 1s;
+}
+
+ 
+
+.discover__img {
+    filter: grayscale(100);
+    transition: 0.5s;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.discover__cell:hover .discover__img {
+    filter: grayscale(0);
+}
+
+.discover__cell:hover .discover__text{
+    color: #000;
+}
+@media all and (max-width: 1300px) {
+    .listing-product-item {
+        width: 25%;
+    }
+}
+@media all and (max-width: 1000px) {
+    .discover__text {
+        color: #000;
+    }
+    .listing-product-item {
+        width: 33%;
+    }
+}
+@media all and (max-width: 600px) {
+    .listing-product-item {
+        width: 50%;
+    }
+
+}
+@media all and (max-width: 425px) {
+    .discover__text {
+        font-size: 14px;
+    }
+    .listing-product__title {
+        margin-left: 0px;
+        font-size: 24px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .listing-product-item {
+        width: 100%;
+    }
+}

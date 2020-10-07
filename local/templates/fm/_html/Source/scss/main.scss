@@ -1,0 +1,14 @@
+@import 'base/fonts';
+@import 'variable';
+
+@import 'common/template', 'common/reset', 'common/common', 'common/typography';
+
+@import 'blocks/header/header','blocks/header/btn-menu','blocks/page-main','blocks/page-product','blocks/page-special','blocks/page-stores','blocks/page-story','blocks/page-listing','blocks/page-parfumer','blocks/page-home','blocks/404','blocks/search','blocks/footer/footer', 'blocks/main-promo', 'blocks/event';
+
+@import 'elements/modal', 'elements/popup', 'elements/collection', 'elements/cookie';
+
+
+@import '../libs/slick/slick', '../libs/slick/slick-theme';
+
+@import '../fonts/font-awesome/css/font-awesome.min';
+

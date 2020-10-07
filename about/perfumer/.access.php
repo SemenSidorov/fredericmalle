@@ -1,0 +1,12 @@
+<?
+$PERM["index_story_text_3.php"]["5"]="W";
+$PERM["index_story_text_2.php"]["5"]="W";
+$PERM["index_story_text.php"]["5"]="W";
+$PERM["index_quote.php"]["5"]="W";
+$PERM["index_perfumers_title.php"]["5"]="W";
+$PERM["index_perfumers_text.php"]["5"]="W";
+$PERM["index_perfumers_all.php"]["5"]="W";
+$PERM["index_main_title.php"]["5"]="W";
+$PERM["index_born.php"]["5"]="W";
+$PERM["index_author.php"]["5"]="W";
+?>

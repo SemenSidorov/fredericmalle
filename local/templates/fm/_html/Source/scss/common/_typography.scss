@@ -1,0 +1,63 @@
+
+
+body {
+	
+    font-size: 16px;	
+    line-height: 1.4;
+    font-family: $font-helvetica;
+    font-style: normal;
+    font-weight: 400;
+	outline: none;
+	min-height: 100%;
+}
+
+a {
+	color: $color-black;
+	
+}
+ 
+a:hover {
+	color: $color-red;
+}
+// Новые заголовки с макета
+
+h1,h2,h3,h4,h5 {
+	font-family: $font-helvetica;
+	margin-bottom:15px;
+}
+
+h1 {    
+   font-size: 32px;
+	}
+
+h2 {
+	font-size: 32px;
+	font-weight: 500;
+}
+
+h3 {
+	font-size: 28px;
+	font-weight: 500;
+}
+
+h4 {    
+	font-size: 20px;
+}
+	
+h5 {    
+	font-size: 14px;
+	font-weight: 400;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+p {
+	font-size: 16px;
+	font-family: $font-helvetica;
+ 	margin-bottom:15px;
+}
+
+
+

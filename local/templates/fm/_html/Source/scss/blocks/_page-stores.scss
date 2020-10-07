@@ -1,0 +1,121 @@
+.tabs-row {
+   font-family: $font-helvetica;
+}
+
+.tabs-caption {
+    font-family: $font-helvetica;
+}
+
+.address {
+    font-family: $font-helvetica;
+    font-weight: 500;
+}
+
+.stores-select {
+	min-height: 30px;
+    max-width: 250px;
+    border: 1px solid #000;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.stores-select__region {
+    padding: 5px 20px;
+    text-transform: uppercase; 
+    margin: 0;
+    text-align: left;
+    color: $color-gray;
+}
+.stores-select__text {
+    cursor: pointer;
+    padding: 10px 50px 10px 0;
+    text-align: center;
+    text-transform: uppercase; 
+    margin: 0;
+}
+.stores-select__link {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+.stores-select__link--active {
+    background: #C8DEF4;
+}
+.active .stores-select__text:hover {
+    background: $color-gray;
+}
+.stores-select__list {
+    display: none;
+    background: #fff;
+    position: absolute;
+    top: 110%;
+    border: 1px solid #000;
+    min-width: 250px;
+    height: 130px;
+    overflow:overlay;
+}
+.stores-select__arrow {
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    z-index: 1;
+}
+.stores-select__arrow_rotate {
+    transform: rotate(180deg);
+}
+.page-stores-list {
+    display: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.page-stores__item {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.page-stores__item:first-child {
+    border-top: 1px solid #dfdfdf;
+}
+
+.page-stores__link{
+    text-decoration: none;
+}
+
+.page-stores__item .address--title {
+    text-align: left;
+    padding: 15px 0 15px 20px;
+}
+
+.page-stores__item .address__row {
+    margin-bottom: 0;
+    
+}
+.page-stores__cell {
+    display: none;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.shop-maps {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1000px) {
+    .address__row {
+        font-size: 11px;
+    }
+    .address--title {
+        font-size: 14px;
+    }
+    .title--mb {
+        margin: 0 auto;
+    }
+}

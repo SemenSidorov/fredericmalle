@@ -1,0 +1,93 @@
+// COLOR
+
+$color-white: #fff;
+$color-red: #eb3300;
+$color-black: #000;
+$color-gray: #cccccc;
+
+//  Шрифты 
+
+$font-helvetica: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+$font-bodoni: 'Bodoni', 'Times New Roman', Times, serif;
+
+// Миксины
+
+@mixin text ($size, $weight, $family, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $family;
+    color: $color;
+}
+
+// Наследование
+//  @extend %center;
+
+%center {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+%H4 {
+    font-family: $font-helvetica;
+    font-weight: 400;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+%L1 {
+    font-family: $font-helvetica;
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: $color-white;
+}
+
+%L3 {
+    font-family: $font-helvetica;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $color-black;
+}
+
+%P1 {
+    font-family: $font-bodoni;
+    font-weight: 400;
+    font-size: 70px;
+    color: $color-black;
+}
+
+%P2 {
+    font-family: $font-helvetica;
+    font-weight: 400;
+    font-size: 50px;
+    color: $color-black;
+}
+
+%P3 {
+    font-family: $font-bodoni;
+    font-weight: 400;
+    font-size: 45px;
+    color: $color-black;
+}
+
+%P4 {
+    font-family: $font-helvetica;
+    font-weight: 400;
+    font-size: 30px;
+    color: $color-black;
+}
+
+%P5 {
+    font-family: $font-helvetica;
+    font-weight: 400;
+    font-size: 20px;
+    color: $color-black;
+}
+
+%P6 {
+    font-family: $font-helvetica;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-black;
+}

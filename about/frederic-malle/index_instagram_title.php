@@ -1,0 +1,1 @@
+<h2 class="section__title section__title_red">ПРИСОЕДИНЯЙТЕСЬ К ПУТЕШЕСТВИЮ <a class="story-follow__link" href="https://www.instagram.com/fredericmalle/" rel="noreferrer" target="_blank">@FredericMalle</a></h2>

@@ -1,0 +1,14 @@
+{
+    "extra": {
+        "merge-plugin": {
+            "require": [
+                "composer-bx.json"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "lacodda/bitrix-cli": "dev-master",
+        "bitrix-expert/monolog-adapter": "dev-master"
+    }
+}

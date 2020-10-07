@@ -1,0 +1,235 @@
+.listing-title {
+    max-width: 747px;
+    margin: 55px auto 95px;
+    text-align: center;
+    padding: 0 20px;
+}
+.listing__title {
+    text-transform: uppercase;
+}
+.listing__text {
+    @extend %P5;
+}
+.listing-nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.listing-nav__text {
+    @extend %L3;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &--red {
+        color: $color-red;
+    }
+}
+.listing-nav__text:hover {
+    color: $color-red;
+}
+/* Выпадающие списки */
+.listing-more {
+    opacity: 0;
+    transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75), opacity 0.1s linear;
+    transform: scale(0.75);
+    transform-origin: 50% 0;
+    box-shadow: 0px 0px 0px 1px rgba(50, 50, 50, 0.09);
+    border-radius: 6px;
+    overflow-y: scroll;
+    max-height: 200px;
+    width: 100%;
+    background: $color-white;
+    position: absolute;
+    z-index: -1;
+}
+.listing-nav__block--open .listing-more {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 10;
+}
+.listing-perfume {
+    top: 70%;
+    left: 0;
+    max-width: 300px;
+    min-width: 260px;
+}
+
+.listing-category {
+    top: 70%;
+    right: 28%;
+    max-width: 280px;
+    min-width: 240px;
+}
+
+.listing-size {
+    top: 70%;
+    right: 0;
+    max-width: 150px;
+    min-width: 130px;
+}
+
+.listing-perfume > a {
+    text-transform: uppercase;
+}
+
+.listing-perfume > a,
+.listing-category > a,
+.listing-size > a{
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: left;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+.listing-perfume > a:hover,
+.listing-category > a:hover,
+.listing-size > a:hover{
+    color: $color-red;
+}
+/*              */
+.listing-nav__arrow {
+    margin-left: 20px;
+    transition: 0.5s;
+}
+.listing-nav__arrow_rotate {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+.listing-collection {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 30px;
+    margin-bottom: 5%;
+    .collection__item:nth-child(2){
+        margin-right: 1.5%;
+    }
+    .collection__item{
+        margin: 0 1.5% 30px;
+        width: 30%;
+    }
+}
+.listing-rows{
+    position: absolute;
+    right: 5%;
+    top: -129px;
+    text-transform: uppercase;
+    font-family: $font-helvetica;
+    font-size: 14px;
+    font-weight: 500;
+}
+.listing-rows__number-3{
+    cursor: pointer;
+    margin: 0 5px;
+    color: $color-gray;
+}
+.listing-rows__number-6{
+    cursor: pointer;
+    margin: 0 5px;
+    color: $color-gray;
+}
+.active__number {
+    color: $color-black;
+}
+
+.rows-6 .collection__item {
+    width: 13%;
+}
+.rows-6 .collection__item-title {
+    font-size: 20px;
+}
+.rows-6 .collection__link {
+    font-size: 14px;
+}
+
+.rows-6 .collection__cell {
+    flex-direction: column;
+    align-items: center;
+}
+
+@media all and (max-width: 1366px) {
+    .listing-rows{
+        display: none;
+    }
+}
+@media all and (max-width: 1000px) {
+    .listing-title {
+        margin-top: 20px;
+    }
+}
+@media all and (max-width: 700px) {
+    .listing-collection {
+        justify-content: center;
+    }
+    .listing-collection .collection__cell-item {
+        max-width: none;
+        width: 100%!important;
+   }
+   .listing-collection .collection__cell {
+       align-items: center;
+       flex-direction: column;
+   }
+   .listing-collection .collection__item {
+       margin: 0 2% 30px;
+       width: 44%;
+   }
+   .listing-collection .collection__item-title {
+       font-size: 16px;
+   }
+}
+
+@media all and (max-width: 500px) {
+    .listing__title {
+        font-size: 22px;
+    }
+    .listing__text {
+        font-size: 16px;
+    }
+    .listing-nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .listing-perfume {
+        top: 30%;
+        left: 20%;
+    }
+    .listing-category {
+        top: 60%;
+        right: 24%;
+        height: 95px;
+    }
+    .listing-size {
+        top: 95%;
+        right: 38%;
+        height: 70px;
+    }
+    .listing-nav__text {
+        margin: 15px 10px;
+    }
+    .listing-title {
+        margin-top: 10%;
+    }
+    .collection__cell {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .listing-perfume {
+        top: 30%;
+        left: 1%;
+    }
+    .listing-category {
+        top: 60%;
+        right: 3%;
+        height: 130px;
+    }
+    .listing-size {
+        top: 95%;
+        right: 33%;
+        height: 130px;
+    }
+}

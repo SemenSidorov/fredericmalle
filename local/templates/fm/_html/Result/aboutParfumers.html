@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link sizes="16x16" href="Content/images/favicon-16x16.png" rel="icon" />
+    <link sizes="32x32" href="Content/images/favicon-32x32.png" rel="icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Content/css/main.css">
+    <title>Story</title>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="modal-popup">
+            <div class="modal">
+                <div class="exit"></div>
+                <h3 class="modal__title">Подпишитесь на новости</h3>
+                <p class="modal__text">Подпишитесь, чтобы получать письма от Фредерика Маля о последних продуктах, специальных предложениях и советах экспертов.</p>
+                <form id="modal-form" class="modal__form" action="#" method="post">
+        
+                    <p class="modal-sex__title">Пол</p>
+                    <div class="modal__cell">
+                        <p class="modal-sex__text"><input class="modal__radio" name="sex" type="radio" value="Женский" checked>Женский</p>
+                        <p class="modal-sex__text"><input class="modal__radio" name="sex" type="radio" value="Мужской">Мужской</p>
+                    </div>
+        
+                    <input class="modal__input modal--margin_top" name="name" type="text" placeholder="* Имя">
+                    <input class="modal__input modal--margin_top" name="email" type="email" placeholder="* E-mail">
+                    <br>
+                    <label class="mycheckbox">
+                        <input class="mycheckbox__default" type="checkbox" name="confirm">
+                        <div class="mycheckbox__new"></div>
+                        <div class="mycheckbox__descr"><span class="modal__checkbox-text">Да, я хочу получать новости и рекламу сайта ru.fredericmalle.com по email, и я прочитал(а), понял(а) и принимаю разделы <a class="privacy-item__link" href="#">Условия Использования</a> и <a class="privacy-item__link" href="#">Политика конфиденциальности</a>  этого сайта.</span></div>
+                    </label>
+                    <input class="modal__btn" type="submit" name="" value="Отправить">
+                </form>
+            </div>
+        </div>
+        <header class="header">
+            <div class="b-center header__main">
+        
+                  <div class="header__item">
+                    <a href="/" class="fredericmalle">FREDERICMALLE</a>  
+        
+                    <div class="header__cell header-btn-mobile">
+                        <div class="btn-menu"><span></span> <span></span> <span></span> <span></span></div>
+                        <div class="menu-adaptiv">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">ИНФОРМАЦИЯ</a>
+                                    <span class="menu__arrow"></span>
+                                    <ul class="hidden-menu__list block">
+                                        <li><a href="/about/frederic-malle/" class="menu__link">ФРЕДЕРИК МАЛЬ</a></li>
+                                        <li><a href="/about/perfumer/" class="menu__link">ПАРФЮМЕРЫ</a></li>
+                                        <li><a href="/about/stores/" class="menu__link">МАГАЗИНЫ</a></li>
+                                        <li><a href="/about/special-projects/" class="menu__link">СПЕЦИАЛЬНЫЕ ПРОЕКТЫ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item"><a href="#" class="menu__link">АРОМАТЫ</a>
+                                    <span class="menu__arrow"></span>
+                                    <ul class="hidden-menu__list">
+                                    <li><a href="#" class="menu__link">All</a></li>
+                                    <li><a href="#" class="menu__link">ANGELIQUES SOUS LA PLUIE</a></li>
+                                    <li><a href="#" class="menu__link">BIGARADE CONCENTREE</a></li>
+                                    <li><a href="#" class="menu__link">CARNAL FLOWER</a></li>
+                                    <li><a href="#" class="menu__link">COLOGNE BIGARADE</a></li>
+                                    <li><a href="#" class="menu__link">COLOGNE INDELEBILE</a></li>
+                                    <li><a href="#" class="menu__link">DANS TES BRAS</a></li>
+                                    <li><a href="#" class="menu__link">DAWN</a></li>
+                                    <li><a href="#" class="menu__link">DRIES VAN NOTEN</a></li>
+                                    <li><a href="#" class="menu__link">EAU DE MAGNOLIA</a></li>
+                                    <li><a href="#" class="menu__link">EN PASSANT</a></li>
+                                    <li><a href="#" class="menu__link">FRENCH LOVER</a></li>
+                                    <li><a href="#" class="menu__link">GERANIUM POUR MONSIEUR</a></li>
+                                    <li><a href="#" class="menu__link">IRIS POUDRE</a></li>
+                                    <li><a href="#" class="menu__link">L'EAU D'HIVER</a></li>
+                                    <li><a href="#" class="menu__link">LE PARFUM DE THERESE</a></li>
+                                    <li><a href="#" class="menu__link">LIPSTICK ROSE</a></li>
+                                    <li><a href="#" class="menu__link">LYS MEDITERRANEE</a></li>
+                                    <li><a href="#" class="menu__link">MONSIEUR</a></li>
+                                    <li><a href="#" class="menu__link">THE MOON</a></li>
+                                    <li><a href="#" class="menu__link">MUSC RAVAGEUR</a></li>
+                                    <li><a href="#" class="menu__link">MUSIC FOR A WHILE</a></li>
+                                    <li><a href="#" class="menu__link">NOIR EPICES</a></li>
+                                    <li><a href="#" class="menu__link">OUTRAGEOUS</a></li>
+                                    <li><a href="#" class="menu__link">PORTRAIT OF A LADY</a></li>
+                                    <li><a href="#" class="menu__link">PROMISE</a></li>
+                                    <li><a href="#" class="menu__link">ROSE &amp; CUIR</a></li>
+                                    <li><a href="#" class="menu__link">SALE GOSSE</a></li>
+                                    <li><a href="#" class="menu__link">SUPERSTITIOUS</a></li>
+                                    <li><a href="#" class="menu__link">THE NIGHT</a></li>
+                                    <li><a href="#" class="menu__link">UNE FLEUR DE CASSIE</a></li>
+                                    <li><a href="#" class="menu__link">UNE ROSE</a></li>
+                                    <li><a href="#" class="menu__link">VETIVER EXTRAORDINAIRE</a></li>
+                                </ul></li>
+                                <li class="menu__item"><a href="#" class="menu__link">УХОД</a>
+                                    <span class="menu__arrow"></span>
+                                    <ul class="hidden-menu__list">
+                                    <li><a href="/products/body/folder/dlya_volos/" class="menu__link">ДЛЯ ВОЛОС</a></li>
+                                    <li><a href="/products/body/folder/cleans/" class="menu__link">ОЧИЩЕНИЕ</a></li>
+                                    <li><a href="/products/body/folder/nourish/" class="menu__link">УВЛАЖНЕНИЕ </a></li>
+                                </ul>
+                                </li>
+                                <li class="menu__item"><a href="#" class="menu__link">ДЛЯ ДОМА</a>
+                                    <span class="menu__arrow"></span>
+                                    <ul class="hidden-menu__list">
+                                    <li><a href="/products/home/svechi/" class="menu__link">СВЕЧИ</a></li>
+                                    <li><a href="/products/home/aromaticheskie_plastiny/" class="menu__link">АРОМАТИЧЕСКИЕ ПЛАСТИНЫ</a></li>
+                                    <li><a href="/products/home/aromatizatsiya_postelnogo_belya/" class="menu__link">АРОМАТИЗАЦИЯ ПОСТЕЛЬНОГО БЕЛЬЯ</a></li>
+                                </ul>
+                                </li>
+                                <li class="menu__item"><a href="#" class="menu__link">ПОДАРКИ</a>
+                                    <span class="menu__arrow"></span>
+                                    <ul class="hidden-menu__list">
+                                        <li><a href="/products/gifts/sets" class="menu__link">НАБОРЫ</a></li>
+                                    </ul></li>
+                                </li>
+                            </ul>
+                        </div>        
+                    </div>
+                                    
+                    <div class="header__cell">
+                        <span class="link-language">RU</span>
+                        <a href="shop.html" class="link-maps">
+                            <svg id="map-marker" viewBox="0 0 500 500"><title>map-marker icon</title><path fill="#fff" d="M245.791 0C153.799 0 78.957 74.841 78.957 166.833c0 36.967 21.764 93.187 68.493 176.926 31.887 57.138 63.627 105.4 64.966 107.433l22.941 34.773a12.497 12.497 0 0 0 20.868 0l22.94-34.771c1.326-2.01 32.835-49.855 64.967-107.435 46.729-83.735 68.493-139.955 68.493-176.926C412.625 74.841 337.783 0 245.791 0zm76.511 331.576c-31.685 56.775-62.696 103.869-64.003 105.848l-12.508 18.959-12.504-18.954c-1.314-1.995-32.563-49.511-64.007-105.853-43.345-77.676-65.323-133.104-65.323-164.743C103.957 88.626 167.583 25 245.791 25s141.834 63.626 141.834 141.833c0 31.643-21.978 87.069-65.323 164.743z"></path><path fill="#fff" d="M245.791 73.291c-51.005 0-92.5 41.496-92.5 92.5s41.495 92.5 92.5 92.5 92.5-41.496 92.5-92.5-41.495-92.5-92.5-92.5zm0 160c-37.22 0-67.5-30.28-67.5-67.5s30.28-67.5 67.5-67.5c37.221 0 67.5 30.28 67.5 67.5s-30.279 67.5-67.5 67.5z"></path></svg>
+                        </a>
+                    </div>
+                    <div class="header__cell header-search">
+                        <a href="#" class="search">
+                            <svg id="search-icon" viewBox="0 0 500 500"><title>search icon</title><path fill="#fff" d="M200.9 392.2c-49.6 0-99.3-18.9-137.1-56.7-75.6-75.6-75.6-198.6 0-274.2s198.6-75.6 274.2 0 75.6 198.6 0 274.2c-37.8 37.8-87.5 56.7-137.1 56.7zM83.6 81c-64.7 64.7-64.7 169.9 0 234.6 64.7 64.7 169.9 64.7 234.6 0 64.7-64.7 64.7-169.9 0-234.6-64.7-64.6-169.9-64.6-234.6 0zm393.3 415.9L308.7 329.2l19.7-19.8L496.7 477l-19.8 19.9z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                 
+                
+                <div class="header-menu" id="ddmenu"> 
+                    <ul class="header-menu__list">
+                        <li><a href="#" class="header-menu__link">STORY</a></li>
+                        <li><a href="#" class="header-menu__link">PERFUMES</a></li>
+                        <li><a href="#" class="header-menu__link">BODY</a></li>
+                        <li><a href="#" class="header-menu__link">HOME</a></li>
+                        <li><a href="#" class="header-menu__link">NEW</a></li>
+                    </ul> 
+                </div>
+        
+                
+                
+            </div>
+        </header>
+        <div class="header-drop">
+            <ul class="header-drop__list">
+                <li><a href="#" class="header-menu__link">FREDERIC MALLE</a></li>
+                <li><a href="#" class="header-menu__link">PERFUME DESIGNERS</a></li>
+                <li><a href="#" class="header-menu__link">STORES</a></li>
+                <li><a href="#" class="header-menu__link">SPECIAL PROJECTS</a></li>
+            </ul> 
+        </div>
+        <div class="header-drop">
+        
+        </div>
+        <div class="header-drop">
+            <ul class="header-drop__list">
+                <li><a href="#" class="header-menu__link">NOURISH</a></li>
+                <li><a href="#" class="header-menu__link">CLEANSE</a></li>
+                <li><a href="#" class="header-menu__link">GROOM</a></li>
+                <li><a href="#" class="header-menu__link">HAIR</a></li>
+            </ul> 
+        </div>
+        <div class="header-drop">
+                <ul class="header-drop__list">
+                        <li><a href="#" class="header-drop__link">CANDLES</a></li>
+                        <li><a href="#" class="header-drop__link">LINEN SPRAY</a></li>
+                        <li><a href="#" class="header-drop__link">RUBBER INCENSE</a></li>
+                    </ul> 
+        </div>
+        <div class="header-drop">
+            <ul class="header-drop__list">
+                <li><a href="#" class="header-drop__link">Наборы</a></li>
+            </ul>
+        </div>
+        <div class="header-search__drop">
+            <div class="header-search__block">
+                <input type="search" id="title-search-input" placeholder="SEARCH (BY FRAGRANCE, NOTE, PERFUMER, COLLABORATION...)">
+                <img class="header-seach__img" src="Content/images/close.svg" alt="">
+            </div>
+            <div class="header-search__item">
+                <div class="header-search__cell">
+                    <div class="collection__item">
+                        <a class="collection-item__link collection-item__link--height" href="#">
+                            <img class="collection__img" src="Content/images/listing/product.jpg" alt="">
+                        </a>
+                        <a class="collection-item__link" href="#">
+                            <h3 class="collection__item-title">Perfume name</h3>
+                        </a>
+                    </div>
+                    <div class="collection__item">
+                        <a class="collection-item__link collection-item__link--height" href="#">
+                            <img class="collection__img" src="Content/images/listing/product.jpg" alt="">
+                        </a>
+                        <a class="collection-item__link" href="#">
+                            <h3 class="collection__item-title">Perfume name</h3>
+                        </a>
+                    </div>
+                    <div class="collection__item">
+                        <a class="collection-item__link collection-item__link--height" href="#">
+                            <img class="collection__img" src="Content/images/listing/product.jpg" alt="">
+                        </a>
+                        <a class="collection-item__link" href="#">
+                            <h3 class="collection__item-title">Perfume name</h3>
+                        </a>
+                    </div>
+                    <div class="collection__item">
+                        <a class="collection-item__link collection-item__link--height" href="#">
+                            <img class="collection__img" src="Content/images/listing/product.jpg" alt="">
+                        </a>
+                        <a class="collection-item__link" href="#">
+                            <h3 class="collection__item-title">Perfume name</h3>
+                        </a>
+                    </div>
+        
+                </div>
+                <div class="header-search__block header-search__block--left">
+                    <a class="header-search__link" href="#">Show Result (<span class="header-search__number">17</span>)</a>
+                </div>
+            </div>
+        
+        </div>
+        <div id="location">
+                <div class="location-main">
+                    <div class="close"></div>
+                    <p class="location__title">Select Your Location</p>
+                    <ul class="location__list">
+                        <li class="location__item"><a class="location__link" href="https://www.fredericmalle.eu/fr-e-UF#forcedLocale">France <span>FREDERICMALLE.FR</span></a> </li>
+                        <li class="location__item"><a class="location__link" href="https://www.fredericmalle.eu/#forcedLocale">Europe <span>FREDERICMALLE.EU</span></a> </li>
+                        <li class="location__item"><a class="location__link" href="https://www.fredericmalle.co.uk/">United Kingdom <span>FREDERICMALLE.CO.UK</span></a> </li>
+                        <li class="location__item"><a class="location__link" href="https://www.fredericmalle.com/?LOCALE=en_US&online=1#forcedLocale">United States <span>FREDERICMALLE.COM</span></a> </li>
+                        <li class="location__item"><a class="location__link" href="https://www.fredericmalle.com/?LOCALE=en_US&stores=1#forcedLocale">International <span>FREDERICMALLE.COM</span></a> </li>
+                        <!--<li class="location__item"><a class="location__link" href="https://www.fredericmalle.com/jp?LOCALE=en_US&stores=1#forcedLocale">Japan <span>FREDERICMALLE.FR</span></a> </li>-->
+                    </ul>
+                    <div class="location__additionally">
+                        <a href="https://www.fredericmalle.com/jp?LOCALE=en_US&stores=1#forcedLocale">Japan</a>
+                        <a href="https://www.fredericmalle.com/ae?LOCALE=en_US&stores=1#forcedLocale">Middle East</a>
+                        <a href="https://www.fredericmalle.com/kr?LOCALE=en_US&stores=1#forcedLocale">Korea</a>
+                    </div>
+                </div>
+            </div>
+        <div class="main">
+
+            <div class="content">
+                <section class="title">
+                    <h2>Perfume Designers</h2>
+                    <p>Frédéric Malle and his Perfume Designers want the same things: creative freedom, access to the highest quality raw materials, and time. Together they collaborate as authors would with an editor, constantly revisiting compositions to the point of perfection, and always striving to create the modern classics of tomorrow.</p>
+                </section>
+                <section class="story-frederic">
+                    <h2>The perfume publisher and authority on perfume making</h2>
+                    <p>As a perfume expert, Mr.Malle handpicks perfumers whose work is changing the face of the industry.
+                         As their editor, he guides them individually through their creative process to ensure that they are always transcending their limits.</p>
+                    <div class="collaboration-main">
+                        <div class="collaboration-item collaboration-item--width">
+                            <img class="collaboration__img" src="Content/images/story/fm2.jpg" alt="#">
+                        </div>
+                        <div class="collaboration-item">
+                            <p>Frédéric Malle was born into a French family of industrialists, artists and perfumers. His grandfather, Serge Heftler-Louiche, founded Parfums Christian Dior before passing on its direction to Frédéric’s mother. 
+                                Mr. Malle himself now represents the third generation of perfume specialists in his family and has become a world authority on perfume making.
+                            </p>
+                            <q>My idea was simply to put perfume
+                                    back into the centre of conversation.</q>
+                            <span> - FREDERIC MALLE</span>
+                            <p>Mr. Malle acquired an extensive knowledge of raw materials and olfactory balance at the prestigious perfume laboratory Roure Bertrand Dupont, where he also befriended the leading perfumers of the industry. He has worked with them for over 25 years,
+                                 cultivating personal relationships defined to this day by mutual trust and respect. </p>
+                            <p> Confronted with the imminent disappearance of the perfume trade, Frédéric Malle went back to what perfumery used to be and to what it could be again in our modern context: a trade in which a perfume is the result of total creative freedom, liberated from the pressure of marketing strategies and deadlines. In essence, a return to the nurture of quality,
+                                 something he felt was slipping through the fingers of the luxury industry. </p>
+                            <div class="collaboration-item__cell">
+                                <a class="collaboration__more collaboration__more_show">Read More</a><img class="collaboration__select-arrow" src="Content/images/arrow1.png" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                <section class="story-list">
+                    <h2>The perfume publisher and authority on perfume making</h2>
+                    <p>As a perfume expert, Mr.Malle handpicks perfumers whose work is changing the face of the industry. As their editor, he guides them individually 
+                        through their creative process to ensure that they are always transcending their limits.</p>
+                    <div class="story-list__block slider-nav">
+                        <div class="story-list__block-item">
+                        <img class="story-list__block-img active_img" src="Content/images/parfumers/portrait/dr.jpg" alt="">
+                        <div class="story-list__block-desc" >
+                            <p>Dominique Ropion</p>
+                        </div>
+                    </div>
+                        <div class="story-list__block-item">
+                            <img class="story-list__block-img" src="Content/images/parfumers/portrait/je.jpg" alt="">
+                            <div class="story-list__block-desc" ><p>Jean-Claude Ellena</p></div>
+                        </div>
+                        <div class="story-list__block-item">
+                            <img class="story-list__block-img" src="Content/images/parfumers/portrait/pb.jpg" alt="">
+                            <div class="story-list__block-desc" ><p>Pierre Bourdon</p></div>
+                        </div>
+                        <div class="story-list__block-item">
+                            <img class="story-list__block-img" src="Content/images/parfumers/portrait/og.jpg" alt="">
+                            <div class="story-list__block-desc" ><p>Olivia Giacobetti</p></div>
+                        </div>
+                        <div class="story-list__block-item">
+                            <img class="story-list__block-img" src="Content/images/parfumers/portrait/mro.jpg" alt="">
+                            <div class="story-list__block-desc" ><p>Maurice Roucel</p></div>
+                        </div>
+                        <div class="story-list__block-item">
+                            <img class="story-list__block-img" src="Content/images/parfumers/portrait/bj.jpg" alt="">
+                            <div class="story-list__block-desc" ><p>Bruno Jovanovic</p></div>
+                        </div>
+                        <div class="story-list__block-item">
+                            <img class="story-list__block-img" src="Content/images/parfumers/portrait/cb.jpg" alt="">
+                            <div class="story-list__block-desc" ><p>Carlos Benaïm</p></div>
+                        </div>
+                        <div class="story-list__block-item">
+                            <img class="story-list__block-img" src="Content/images/parfumers/portrait/ef.jpg" alt="">
+                            <div class="story-list__block-desc" ><p>Edouard Fléchier</p></div>
+                        </div>
+                        <div class="story-list__block-item">
+                            <img class="story-list__block-img" src="Content/images/parfumers/portrait/er.jpg" alt="">
+                            <div class="story-list__block-desc" ><p>Edmond Roudnitska</p></div>
+                        </div>
+                        <div class="story-list__block-item">
+                            <img class="story-list__block-img" src="Content/images/parfumers/portrait/fb.jpg" alt="">
+                            <div class="story-list__block-desc" ><p>Fanny Bal</p></div>
+                        </div>
+                        <div class="story-list__block-item">
+                            <img class="story-list__block-img" src="Content/images/parfumers/portrait/mr.jpg" alt="">
+                            <div class="story-list__block-desc" ><p>Michel Roudnitska</p></div>
+                        </div>
+                        <div class="story-list__block-item">
+                            <img class="story-list__block-img" src="Content/images/parfumers/portrait/rs.jpg" alt="">
+                            <div class="story-list__block-desc" ><p>Ralf Schwieger</p></div>
+                        </div>
+                        <div class="story-list__block-item">
+                            <img class="story-list__block-img" src="Content/images/parfumers/portrait/sg.jpg" alt="">
+                            <div class="story-list__block-desc" ><p>Sophia Grojsman</p></div>
+                        </div>
+                    </div>
+                    <div class="slider-for">
+                        <div class="story-list__item">
+                            <div class="story-list__content">
+                                <div class="story-list__cell">
+                                    <p>Frédéric Malle and his Perfume Designers want the same things: creative freedom, access to the highest quality raw materials, and time. Together they collaborate as authors would with an editor, constantly revisiting compositions to the point of perfection, and always striving
+                                        to create the modern classics of tomorrow.Dominique Ropion is a daring perfectionist, a true inventor.</p>
+                                    <q>A good perfume, he likes to say, must always be at once excessive</q>
+                                    <span> – Dominique Ropion</span>
+                                    <p>The risks he takes are invariably accompanied by a relentless pursuit of exact olfactory balance and flawless composition. His perfumes are like great architectural feats: in the same way that a bridge,
+                                        whose seemingly miraculous suspension of weight is in fact a harnessing of counteracting forces.</p>
+                                    <p>Dominique Ropion often balances excessive doses of powerful ingredients with meticulously measured, subtler accords, until the composition holds up on its own. A good perfume,
+                                        he likes to say, must always be at once excessive and harmonious.</p>
+                                    <a href="#" class="collaboration__more">Discover more</a>
+                                </div>
+                                <div class="story-list__cell">
+                                    <div><img class="arrow arrow_prev" src="Content/images/arrow.png" alt=""></div>
+                                    <img class="story-list__cell-img" src="Content/images/parfumers/img/dr.jpg" alt="">
+                                    <div><img class="arrow arrow_next" src="Content/images/arrow.png" alt=""></div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="story-list__item">
+                            <div class="story-list__content">
+                                <div class="story-list__cell">
+                                    <p class="story__text">As a disciple and close friend of the legendary Edmond Roudnitska (creator of Le Parfum de Thérèse), Jean-Claude Ellena developed, over the years, a unique minimalistic approach to perfumery. This distinctive style, which is continually informed by his elegant and quiet way of being, has been compared to watercolor sketches and chamber music. Ellena says that a perfume must be like “a soft caress; nothing must shock, nothing must shout.” Edmond Roudnitska’s minimalism never left him, however, and his compositions remain focused around a few ingredients, avoiding repetition.</p>
+                                    <p class="story__text">Jean-Claude Ellena was born in Grasse into a family of parfumers. His training began at age 17, in the most prestigious laboratories – in Grasse, Paris, New York and Geneva – where he always saw himself as self-taught. He met Frédéric Malle at Givaudan Roure when he was working on Bulgari’s Eau au Thé Vert. He composed one perfume a year for Editions de Parfums before joining Hermès.</p>
+                                    <a href="#" class="collaboration__more">Discover more</a>
+                                </div>
+                                <div class="story-list__cell">
+                                    <div><img class="arrow arrow_prev" src="Content/images/arrow.png" alt=""></div>
+                                    <img class="story-list__cell-img" src="Content/images/parfumers/img/je.jpg" alt="">
+                                    <div><img class="arrow arrow_next" src="Content/images/arrow.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story-list__item">
+                            <div class="story-list__content">
+                                <div class="story-list__cell">
+                                    <p class="story__text">As Edmond Roudnitska’s only student, Pierre Bourdon inherited his rigorous perfume technique. He also learned from him that perfumes should be created as works of art. With this in mind, Pierre went on to revolutionize men’s perfumery in the 1980s with Cool Water for Davidoff. That was when he met Frédéric Malle. Having realized that they shared the same vision of perfume making, the two became like family to one another. It was obvious to Frédéric Malle, when he created Editions de Parfums, that Pierre Bourdon should compose its first perfume, Iris Poudre.</p>
+                                    <p class="story__text">The two brothers in arms had grown up under the same spell of Dior Parfums, where their parents both had established careers. After graduating from the Paris Institute of Political Studies, the childhood spell caught up with Pierre and, like Frédéric Malle, he enrolled at Roure Bertrand Dupont.</p>
+                                    <a href="#" class="collaboration__more">Discover more</a>
+                                </div>
+                                <div class="story-list__cell">
+                                    <div><img class="arrow arrow_prev" src="Content/images/arrow.png" alt=""></div>
+                                    <img class="story-list__cell-img" src="Content/images/parfumers/img/pb.jpg" alt="">
+                                    <div><img class="arrow arrow_next" src="Content/images/arrow.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story-list__item">
+                            <div class="story-list__content">
+                                <div class="story-list__cell">
+                                    <p class="story__text">Olivia Giacobetti has an uncanny ability to create an atmosphere. Having completed her training at Robertet, she founded her own perfume laboratory, Iska, and dedicated her career to doing precisely that. She is the brains and the nose behind the fig accords that have been present in home scents for years.</p>
+                                    <p class="story__text"> The perfumes that move her most are “echoes of everyday life and nature: fleeting emotions, moods, details, attitudes… the many small fragments of life that bear new images”. Her compositions capture the authenticity of a single moment. They are, in other words, odes to transience.</p>
+                                    <a href="#" class="collaboration__more">Discover more</a>
+                                </div>
+                                <div class="story-list__cell">
+                                    <div><img class="arrow arrow_prev" src="Content/images/arrow.png" alt=""></div>
+                                    <img class="story-list__cell-img" src="Content/images/parfumers/img/og.jpg" alt="">
+                                    <div><img class="arrow arrow_next" src="Content/images/arrow.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story-list__item">
+                            <div class="story-list__content">
+                                <div class="story-list__cell">
+                                    <p class="story__text">Maurice Roucel joined Chanel’s laboratory as a chemist in 1973, and since then has been a self-taught perfumer. Although his legendary olfactory style is now characterized for the most part by opulent sensuality – sprung from his preference for musk, white flowers and amber – the precise methodology of his original profession has remained.</p>
+                                    <p class="story__text">Roucel's strong personality allows him to bypass trends, as was the case in 2001 with Musc Ravageur. The perfume shocked the whole perfume industry, only to be recognized today as the Sistine Chapel of the Amber Oriental tradition.</p>
+                                    <a href="#" class="collaboration__more">Discover more</a>
+                                </div>
+                                <div class="story-list__cell">
+                                    <div><img class="arrow arrow_prev" src="Content/images/arrow.png" alt=""></div>
+                                    <img class="story-list__cell-img" src="Content/images/parfumers/img/mro.jpg" alt="">
+                                    <div><img class="arrow arrow_next" src="Content/images/arrow.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story-list__item">
+                            <div class="story-list__content">
+                                <div class="story-list__cell">
+                                    <p class="story__text">	Bruno Jovanovic is a raising star at IFF (International Flavor and Fragrances). Unlike many of his contemporaries, who create at the mercy of fragrance distribution, Bruno Jovanovic has developed a technique highly influenced by perfume classics. Similarly, his ideas for perfumes, which often appear as pictures or impressions of daily life in his mind, are ones of classic elegance; but his method, which seeks to modernize these images, is distinctly innovative.</p>
+                                    <a href="#" class="collaboration__more">Discover more</a>
+                                </div>
+                                <div class="story-list__cell">
+                                    <div><img class="arrow arrow_prev" src="Content/images/arrow.png" alt=""></div>
+                                    <img class="story-list__cell-img" src="Content/images/parfumers/img/bj.jpg" alt="">
+                                    <div><img class="arrow arrow_next" src="Content/images/arrow.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story-list__item">
+                            <div class="story-list__content">
+                                <div class="story-list__cell">
+                                    <p class="story__text">Carlos Benaïm is considered to be America’s greatest living perfumer. As the author of the legendary perfume Polo Ralph Lauren and of many other beloved classics, he owes his success to a great intellectual curiosity that has always pushed him to embrace a world beyond the boundaries of perfume making.</p>
+                                    <p class="story__text">He discovered perfumery as a child through his father, who was a pharmacist in Morocco and had a passion for extracting essential oils. “Every summer,” Carlos Benaïm remembers: “my father and I would drive our Jeep through the countryside, in and out of picking and distillation spots, and I would feel his enthusiasm intensifying." He later acquired a deep knowledge of perfume composition under the tutelage of the renowned American perfumer Ernest Shiftan.</p>
+                                    <a href="#" class="collaboration__more">Discover more</a>
+                                </div>
+                                <div class="story-list__cell">
+                                    <div><img class="arrow arrow_prev" src="Content/images/arrow.png" alt=""></div>
+                                    <img class="story-list__cell-img" src="Content/images/parfumers/img/cb.jpg" alt="">
+                                    <div><img class="arrow arrow_next" src="Content/images/arrow.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story-list__item">
+                            <div class="story-list__content">
+                                <div class="story-list__cell">
+                                    <p class="story__text">Edouard Fléchier is one of the most creative perfumers of his generation. His hypersensitive nose made him a prodigy at Roure, where he was a student, and has been a key component to his inventiveness ever since. Yet, even as a star, he remains humble and uncompromisingly self-disciplined, never once missing his morning ritual of smelling raw materials and refreshing his knowledge of the fundamentals. Although his compositions are fiercely precise as a result, their unexpected modern twists never cease to astonish. They now include known masterpieces such as Poison, Montana and Michael Kors.</p>
+                                    <a href="#" class="collaboration__more">Discover more</a>
+                                </div>
+                                <div class="story-list__cell">
+                                    <div><img class="arrow arrow_prev" src="Content/images/arrow.png" alt=""></div>
+                                    <img class="story-list__cell-img" src="Content/images/parfumers/img/ef.jpg" alt="">
+                                    <div><img class="arrow arrow_next" src="Content/images/arrow.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story-list__item">
+                            <div class="story-list__content">
+                                <div class="story-list__cell">
+                                    <p class="story__text">Edmond Roudnitska is remembered today as one of the most important perfumers in history: as a "perfumer composer" and the inventor of modern perfumery. His encounter in the 1950s with Serge Heftler-Louiche, the founder of Parfums Christian Dior and Frédéric Malle’s grandfather, was decisive. Together they created many legendary perfumes: Diorella, Eau Fraîche, Diorissimo… Later came the most famous of all, Eau Sauvage, whose launch coincided with the public’s recognition of Edmond as the first “nose” of the perfume industry.</p>
+                                    <p class="story__text">Edmond Roudnitska began his career as a chemist at Roure Bertrand Dupont, where he developed an encyclopedic knowledge of natural and synthetic raw materials. This breadth of knowledge enabled him to develop the distinctive minimalist style that was so ahead of its time, and that led to his legendary, secret masterpiece, Le Parfum de Thérèse. Only she, his wife, was allowed to wear it; but as a token of their shared family history, and as a sign of appreciation for his nascent Editions de Parfums, she entrusted the formula to Frédéric Malle after Edmond Roudnitska’s death.</p>
+                                    <a href="#" class="collaboration__more">Discover more</a>
+                                </div>
+                                <div class="story-list__cell">
+                                    <div><img class="arrow arrow_prev" src="Content/images/arrow.png" alt=""></div>
+                                    <img class="story-list__cell-img" src="Content/images/parfumers/img/er.jpg" alt="">
+                                    <div><img class="arrow arrow_next" src="Content/images/arrow.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story-list__item">
+                            <div class="story-list__content">
+                                <div class="story-list__cell">
+                                    <p class="story__text">Fanny Bal is a force of nature. As Dominique Ropion’s apprentice, she has access to the finest raw materials in the industry and some of its best-kept secrets; and yet, she is constantly surprising her seniors, first at ISIPCA, then at IFF, with her own independent initiatives and rigorous experimentation, both testaments to her flourishing talent. She has shown everyone, including Frédéric Malle, that she is a young perfumer to be reckoned with. Dominique Ropion has said of his pupil that, “curious, tenacious and bold” in both her approach to perfume and as a person, Fanny Bal possesses “all the best qualities to become a great perfumer”.</p>
+                                    <a href="#" class="collaboration__more">Discover more</a>
+                                </div>
+                                <div class="story-list__cell">
+                                    <div><img class="arrow arrow_prev" src="Content/images/arrow.png" alt=""></div>
+                                    <img class="story-list__cell-img" src="Content/images/parfumers/img/fb.jpg" alt="">
+                                    <div><img class="arrow arrow_next" src="Content/images/arrow.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story-list__item">
+                            <div class="story-list__content">
+                                <div class="story-list__cell">
+                                    <p class="story__text">Michel Roudnitska spent his childhood exploring his parents’ laboratory, where perfume became his mother tongue. He was initiated by his father, the illustrious Edmond Roudnitska, into the art of perfume composition. Later, he broadened his artistic horizons by becoming a photographer and a director. He joined his parent’s lab Art & Parfum in 1997, where he creates perfumes with great aesthetic rigor. Michel Roudnitska, like his father before him, has always considered perfume making to be an art. His style is continually informed by his many travels around the world.</p>
+                                    <a href="#" class="collaboration__more">Discover more</a>
+                                </div>
+                                <div class="story-list__cell">
+                                    <div><img class="arrow arrow_prev" src="Content/images/arrow.png" alt=""></div>
+                                    <img class="story-list__cell-img" src="Content/images/parfumers/img/mr.jpg" alt="">
+                                    <div><img class="arrow arrow_next" src="Content/images/arrow.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story-list__item">
+                            <div class="story-list__content">
+                                <div class="story-list__cell">
+                                    <p class="story__text">Ralf Schwieger once took part in a perfume contest that Frédéric Malle had staged for young perfumers. Frédéric Malle sampled their perfumes one by one, blindfolded, until he reached Schwieger’s sketch of what was to become Lipstick Rose, and the young perfumer was chosen to join the “greats” among those at Editions de Parfums.</p>
+                                    <p class="story__text">Having spent his childhood in Germany exploring forests and absorbing all of their unusual smells, Ralf Schwieger is prone to creating perfumes with unexpected personalities. He describes his attitude to perfume making as a game in two parts, whose first is intellectual or conceptual, and whose second is a lengthier one of sensory research. His perfumes, as a result, are both cerebral and intuitive.</p>
+                                    <a href="#" class="collaboration__more">Discover more</a>
+                                </div>
+                                <div class="story-list__cell">
+                                    <div><img class="arrow arrow_prev" src="Content/images/arrow.png" alt=""></div>
+                                    <img class="story-list__cell-img" src="Content/images/parfumers/img/rs.jpg" alt="">
+                                    <div><img class="arrow arrow_next" src="Content/images/arrow.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story-list__item">
+                            <div class="story-list__content">
+                                <div class="story-list__cell">
+                                    <p class="story__text">As a child, in Belarus, this perfume queen-to-be would run around the garden smelling roses and violets, leaving her toys untouched, dismissed. After studying chemistry at university, she emigrated to New York and joined the IFF laboratories where she learned the art of perfumery under the guidance of Ernest Shiftan, one of the greatest American perfumers in history.</p>
+                                    <p class="story__text">Sophia Grojsman was the first perfumer to inverse classical proportions of ingredients in perfumes, having discovered that an overdose of a certain ingredient could propel it to the top of the perfume’s structure. She combined this revolutionary technique with classical perfume structures to create a truly unique aesthetic, one that was to forever shape the art of perfume making. She was also well-known for her endless fascination with rose, a flower she uses in most of her creations.</p>
+                                    <a href="#" class="collaboration__more">Discover more</a>
+                                </div>
+                                <div class="story-list__cell">
+                                    <div><img class="arrow arrow_prev" src="Content/images/arrow.png" alt=""></div>
+                                    <img class="story-list__cell-img" src="Content/images/parfumers/img/sg.jpg" alt="">
+                                    <div><img class="arrow arrow_next" src="Content/images/arrow.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+
+                <h2 class="section__title section__title_red">Мир Фредерика Маля</h2>
+                <p class="story-follow__text">Присоединяйтесь к прекрасному миру <a class="story-follow__link" href="https://www.instagram.com/fredericmalle/" target="_blank">@fredericmalle</a>, наполненному искусством и вдохновением.</p>
+                <section class="story-follow">
+                
+                    <div class="story-follow__block">
+                        <a class="story-follow__block-link" href="https://www.instagram.com/fredericmalle/" target="_blank"><img class="story-follow__img" src="Content/images/story/journey1.jpg" alt=""></a>
+                        <a class="story-follow__block-link" href="https://www.instagram.com/fredericmalle/" target="_blank"><img class="story-follow__img" src="Content/images/story/journey2.jpg" alt=""></a>
+                        <a class="story-follow__block-link" href="https://www.instagram.com/fredericmalle/" target="_blank"><img class="story-follow__img" src="Content/images/story/journey3.jpg" alt=""></a>
+                    </div>
+                </section>
+            </div>
+
+        </div><!-- main -->
+
+        <div class="cookie-block">
+            <div class="cookie-item">
+                <p class="cookie__text">
+                    Используя наш сайт, вы даете согласие на обработку файлов сookies и других пользовательских данных, в соответствии с
+                    <a href="#">Политикой конфиденциальности</a>.
+                </p>
+            </div>
+            <div class="cookie-item">
+                <a href="#" class="cookie__link">Ok</a>
+                <div class="cookie-item__circle"><img class="cookie__img" src="Content/images/close.svg" alt=""></div>
+            </div>
+        </div>
+<footer class="footer">
+    <div class="b-center footer-main">
+        <div class="footer-item">
+            <div class="footer-cell">
+                <h3 class="footer__title">ABOUT</h3>
+                <ul class="footer__list">
+                    <li><a class="footer__link" href="#">FREDERIC MALLE</a></li>
+                    <li><a class="footer__link" href="#">PERFUME DESIGNERS</a></li>
+                    <li><a class="footer__link" href="#">STORE LOCATOR</a></li>
+                    <li><a class="footer__link" href="#">SPECIAL PROJECTS</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-cell">
+                <h3 class="footer__title">SHOP</h3>
+                <ul class="footer__list">
+                    <li><a class="footer__link" href="#">NEW</a></li>
+                    <li><a class="footer__link" href="#">PERFUMES</a></li>
+                    <li><a class="footer__link" href="#">BODY LINE</a></li>
+                    <li><a class="footer__link" href="#">CANDLES & HOME SCENTS</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-item">
+
+            <div class="footer-subscribe">
+                <form id="footer-form" class="footer-subscribe__form" action="#" method="post">
+                    <div class="footer-subscribe__cell">
+                        <div class="footer-subscribe__close"></div>
+                        <div class="footer-subscribe__title">Подпишитесь на новости</div>
+                        <p class="footer-subscribe__text">Подпишитесь, чтобы получать эксклюзивную информацию о наших продуктах.</p>
+
+                        <label class="mycheckbox-footer">
+                            <input class="mycheckbox__default-footer" type="checkbox" name="confirm">
+                            <div class="mycheckbox__new-footer"></div>
+                            <div class="mycheckbox__descr"><span class="modal__checkbox-text">Да, я хочу получать новости и рекламу сайта ru.fredericmalle.com по email, и я прочитал(а), понял(а) и принимаю разделы <a class="privacy-item__link" href="#">Условия Использования</a> и <a class="privacy-item__link" href="#">Политика конфиденциальности</a>  этого сайта.</span></div>
+                        </label>
+
+                        <p class="footer-subscribe__label">E-mail</p>
+                    </div>
+                    <div class="footer-subscribe__item">
+                        <label class="footer-subscribe__item-label" for="footer-email">Email</label>
+                        <input class="footer-subscribe__input" type="email" id="footer-email" name="email" placeholder="E-mail">
+                        <a href="#" class="footer-subscribe__submit">Подписаться</a>
+                    </div>
+                    
+                </form>
+            </div>
+
+            <div class="footer-social social">
+                <a href="#" class="social__link" rel="noopener"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="social__link" rel="noopener"><i class="fa fa-youtube"></i></a>
+                <a href="#" class="social__link" rel="noopener" style="width: 16px;">
+                    <svg id="instagram" viewBox="0 0 606 500">
+                        <title>instagram</title>
+                        <path fill="#FFFFFF" d="M303.2 120.1c-71.1 0-128.6 57.6-128.6 128.6 0 71.1 57.6 128.6 128.6 128.6 71.1 0 128.6-57.6 128.6-128.6 0-71.1-57.5-128.6-128.6-128.6zm0 211.2c-45.5 0-82.6-37-82.6-82.6 0-45.5 37-82.6 82.6-82.6 45.5 0 82.6 37 82.6 82.6 0 45.5-37.1 82.6-82.6 82.6zM436.8 88c16 0 29 13 29 29s-13 29-29 29-29-13-29-29 13-29 29-29z"></path>
+                        <path fill="#FFFFFF" d="M512.9 41C486.4 14 449.8 0 406.8 0H199.1C111.5 0 52.9 58.5 52.9 146.1v206.7c0 43.5 14.5 81.1 42 107.6 26.5 26 63.1 39.5 105.1 39.5h205.7c43 0 79.6-13.5 106.1-39.5 27-26.5 41-63.1 41-106.6V146.1c.6-42-13.4-78.6-39.9-105.1zm-5.5 313.3c0 30.5-9.5 56.1-27.5 73.6-17.5 17.5-43.5 26.5-74.1 26.5H200.1c-30 0-55.1-9-73.1-26.5-18.5-18-28-43.5-28-74.6V146.6c0-30.5 9.5-56.1 27-73.6s43-26.5 73.1-26.5h207.7c30 0 55.6 9.5 73.1 27.5 17.5 18 27 43 27 73.1v207.2h.5z"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-country">
+                <div class="footer-country__select">
+                        Россия, русский
+                        <img class="footer__arrow" src="Content/images/select-arrow.png" alt="">
+                </div>
+                <div class="footer-country__list">
+                        <a class="footer-country__link" href="https://www.fredericmalle.eu/fr-e-UF#forcedLocale">France, Français</a>
+                        <a class="footer-country__link" href="https://www.fredericmalle.eu/">Rest of Europe, English</a>
+                        <a class="footer-country__link" href="https://www.fredericmalle.com/">International, English</a>
+                        <a class="footer-country__link" href="https://www.fredericmalle.co.uk/">United Kingdom, English</a>
+                        <a class="footer-country__link" href="https://www.fredericmalle.com/jp?LOCALE=en_US&stores=1#forcedLocale">Japan, Japanese</a>
+                        <a class="footer-country__link" href="https://www.fredericmalle.com/">UNITED STATES, ENGLISH</a>
+                        <a class="footer-country__link footer__link_active" href="#">Россия, Русский</a>
+                </div>
+            </div>
+
+            <div class="footer-more">
+                <a class="footer__link" href="#">Terms & Conditions</a>
+                <a class="footer__link" href="#">Privacy Policy</a>
+            </div>
+
+            <p class="copyright">&copy; NOUVELLES ÉDITIONS DE PARFUMS 2018</p>
+
+        </div>
+
+    </div>
+</footer>
+    </div>
+
+    <script src="Content/libs/jquery.min.js"></script>
+    <script src="Content/libs/slick/slick.min.js"></script>
+    <script src="Content/libs/jquery-validation-1.19.1/dist/jquery.validate.js"></script>
+    <script src="Scripts/init.js"></script>
+
+    <div id="toTop" class="btn-toTop">Вверх</div>
+</body>
+
+</html>

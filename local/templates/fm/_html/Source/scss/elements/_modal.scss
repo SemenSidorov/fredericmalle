@@ -1,0 +1,338 @@
+
+.modal-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe-popup .modal-popup {
+    display: flex;
+}
+.modal {
+    position: relative;
+    width: 100%;
+    max-width: 620px;
+    background: $color-white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.modal--success {
+    min-height: 207px;
+    padding: 40px 35px 30px;
+    .modal__title {
+        margin-bottom: 50px;
+        font-size: 36px;
+        font-weight: 100;
+    }
+}
+
+.exit {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    background: url('../images/close.svg') center no-repeat;
+    width: 11px;
+    height: 12px;
+    cursor: pointer;
+}
+.exit--success {
+    top: 7%;
+    right: 10px;
+}
+.modal__title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0 20px 20px;
+    position: relative;
+    padding:0 10px 20px;
+
+}
+
+.modal__title::after {
+    content: "";
+    background: url('../images/line.png') center no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    margin-left: -40%;
+    width: 100%;
+    height: 1px;
+
+}
+
+.modal_margin_top {
+    margin-top: 40px;
+}
+
+.modal--margin_top {
+    margin-top: 20px;
+}
+.modal__text {
+    margin: 0 20px 20px 20px;
+}
+.modal__form {
+    margin: 0 20px;
+    br {
+        display: none;
+    }
+}
+
+.modal__local {
+    min-width: 80px;
+    min-height: 30px;
+    padding-left: 15px;
+    font-family: $font-helvetica;
+    text-transform: uppercase;
+}
+
+.modal__input {
+    display: block;
+    width: 90%;
+    min-height: 30px;
+    padding-left: 15px;
+    font-family: $font-helvetica;
+}
+
+.modal__country {
+    display: block;
+    width: 50%;
+    min-height: 30px;
+    padding-left: 15px;
+    font-family: $font-helvetica;
+    text-transform: uppercase;
+}  
+
+.mycheckbox {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.mycheckbox__default {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
+
+.modal__checkbox-text {
+    font-size: 16px;
+    font-family: $font-bodoni;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+
+.modal__btn {
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    min-width: 240px;
+    min-height: 30px;
+    background: #eb4400;
+    color: #fff;
+    font-family: $font-helvetica;
+    border: 1px solid #eb4400;
+    text-transform: uppercase;
+}
+.modal__btn--success {
+    margin: 30px auto 20px;
+}
+
+.mycheckbox__new::after {
+    content: "";
+    display: block;
+
+    left: -1px;
+    top: -1px;
+    position: absolute;
+
+}
+.mycheckbox__default:checked + .mycheckbox__new::after {
+    background: url('../images/checkbox--checked.svg') center no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+}
+.checkbox-active .mycheckbox__new::after {
+    background: url('../images/checkbox--checked.svg') center no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.mycheckbox__new {
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    position: relative;
+    top: -20px;
+    left: 0px;
+
+}
+.checkbox-error .mycheckbox__new {
+    border: 1px solid red;
+}
+
+
+.mycheckbox__descr {
+    padding-left: 20px;
+    max-width: 490px;
+}
+
+.modal-sex__title {
+    margin-bottom: 5px;
+}
+
+.modal__cell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 190px;
+}
+
+.modal-sex__text {
+    margin-bottom: 0;
+}
+
+.modal__radio {
+    margin-right: 5px;
+}
+
+input.error {
+    border: 1px solid #ff0000;
+}
+select.error {
+    border: 1px solid #ff0000;
+}
+label.error {
+    color: #ff0000;
+    font-weight: normal;
+    margin-top: 10px;
+    display: block;
+}
+#confirm-error {
+   position: absolute;
+    bottom: -27px;
+}
+
+.modal__link {
+    display: block;
+    max-width: 280px;
+    margin: 0 auto;
+    min-height: 30px;
+    background: #eb4400;
+    color: #fff;
+    font-family: "HelveticaNeue", Arial, Helvetica, sans-serif;
+    border: 1px solid #eb4400;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 4px;
+    &:hover {
+        color: #fff;
+    }
+}
+@media all and (max-width: 1000px) {
+    input[type="color"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="email"],
+    input[type="month"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="time"],
+    input[type="url"],
+    input[type="week"],
+    select:focus,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+
+
+}
+@media all and (max-width: 650px) {
+    .modal {
+        overflow: auto;
+        max-height: 500px;
+    }
+}
+@media all and (max-width: 500px) {
+
+    .modal__title {
+        font-size: 20px;
+    }
+    .modal {
+        padding: 5px;
+    }
+    .modal_margin_bottom {
+        margin: 0 10px 10px 10px;
+    }
+    .modal--success {
+        padding: 40px 35px 30px;
+        .modal__title {
+            font-size: 20px;
+        }
+    }
+}
+@media all and (max-width: 450px) {
+    .modal__checkbox-text {
+        font-size: 14px;
+    }
+    .modal__text {
+        font-size: 14px;
+    }
+    .modal__title {
+        padding: 0 10px 10px;
+    }
+    label.error {
+        font-size: 12px;
+    }
+    .mycheckbox {
+        margin-bottom: 20px;
+    }
+    #confirm-error {
+        bottom: -15px;
+    }
+    .modal--margin_top {
+        margin-top: 10px;
+    }
+    .modal__checkbox-text {
+        font-size: 14px;
+    }
+    .modal--success {
+        min-height: 140px;
+        .modal__title {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .modal__link {
+            font-size: 12px;
+        }
+    }
+}

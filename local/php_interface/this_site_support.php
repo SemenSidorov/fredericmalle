@@ -1,0 +1,1 @@
+Разработчик: <a href="http://www.ddplanet.ru" target="_blank" rel="nofollow">http://www.ddplanet.ru</a>
